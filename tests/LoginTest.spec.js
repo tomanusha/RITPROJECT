@@ -8,6 +8,7 @@ test('Orange Hrm Login Test',async({page})=>{
 
     await login.goto();
     await login.logintest("Admin","admin123");
+    await page.screenshot({path: 'Screenshots/LoginTest.png',fullPage: true});
     await login.verifyDashboard();
     await login.verifyPim();
     await login.PimFields("Greens","Green26");

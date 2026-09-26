@@ -1,5 +1,5 @@
 const { chromium } = require('playwright');
-const { expect } = require('chai');
+const assert = require('assert');
 const LoginProfilePage = require('../BasePage/Pages/LoginProfilePage');
 
 describe('LoginProfileP', function () {
